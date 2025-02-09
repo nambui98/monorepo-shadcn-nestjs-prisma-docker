@@ -1,5 +1,7 @@
 {
-  "extends": "@workspace/typescript-config/nestjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tsup.config.ts", "src/client.js"],
+  "extends": "@workspace/typescript-config/base.json",
+  "compilerOptions": {
+    "noImplicitAny": false
+  },
   "exclude": ["node_modules"]
 }
